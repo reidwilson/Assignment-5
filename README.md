@@ -68,3 +68,20 @@
   2. I feel like a lot of people wouldn't use the app
   3. I don't see any issues
 
+# Requirements
+  For this project to be successful, the app will need to be able to recieve and process texts quickly.
+  It will need to be be able to register a professor who will be the only one able to create and edit questions.
+  It will need to be able to handle multiple responses at the same time.
+  It will need to be able to track students answers over time.
+  It will need to be able to 
+
+# Development Approach
+  For this project, I will try to follow a Test Driven Development paradigm for general coding.
+  To configure the app for the class, a professor will only have to send a special command that registers his phone number as a professor for the class.
+  Once this is acomplished, the app will then send him a unique room key that he can give the class to text to the app in order to register each of them as students.
+  For the application itself, I plan on storing the number of answers each student has submitted in a map that will keep track of their attendance.
+  Additionally, I will have a map structure that will contain data about the "current" question such as what the question actually is and other metadata
+  When the students are ready, they can either text the number the answer or text a keyword that will cause a reply text of what the current question is.
+  This design will be able to avoid issues by mirroring existing functionality as much as possible which currently avoids state conflict. 
+  In order to stay on track with goals, I have left certain implementations deliberatly vague in order to compensate for misfunctionality and future changes.
+  As previously stated, certain elements are abstracted such that changes to one component will not affect existing code.
