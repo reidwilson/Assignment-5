@@ -1,6 +1,7 @@
 (ns asgnx.core
   (:require [clojure.string :as string]
             [clojure.core.async :as async :refer [go chan <! >!]]
+            [clojure.java.util.UUID]
             [asgnx.kvstore :as kvstore
              :refer [put! get! list! remove!]]))
 
